@@ -108,7 +108,7 @@ export default class PercentageCircle extends Component {
               overflow: 'hidden',
               transform: [
                 { translateX: radius / 2 },
-                { rotate: `${rotateDegrees}deg` },
+                { rotate: `${isNaN(rotateDegrees) ? 0 : rotateDegrees}deg` },
                 { translateX: -radius / 2 },
               ],
               backgroundColor: color,
